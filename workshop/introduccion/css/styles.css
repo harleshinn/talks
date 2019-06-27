@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* HELPER */
+.content-wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 60em) {
+  .content-wrapper {
+    width: 1080px;
+    
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+
+/* HEADER */
+.header,
+.footer {
+  background: #ccc;
+}
+
+.masthead {
+  background: url('../images/buenos-aires-congreso.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
