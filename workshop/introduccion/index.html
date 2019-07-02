@@ -4,35 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Workshop // HTML, CSS, JavaScript</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="header" role="header">
+  <header class="header">
     <div class="content-wrapper">
-      <a href="#"><img src="" alt="Logo"></a>
-      <nav class="navigation" role="navigation">
+      <a href="#" class="logo"><img src="images/mrm-mccann-workshop.svg" alt="Logo"></a>
+      <nav class="navigation">
         <ul class="nav">
-          <li class="nav-item"><a href="#section-1">Section-1</a></li>
+          <li class="nav-item"><a href="#section-1" class="active">Section-1</a></li>
           <li class="nav-item"><a href="#section-2">Section-2</a></li>
           <li class="nav-item"><a href="#section-3">Section-3</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section id="section-1" class="content-wrapper masthead">
-    <div class="content-box">
-      <h1>Test title</h1>
-      <p>
-        Some Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Ducimus recusandae numquam quibusdam assumenda, totam qui perferendis, 
-        modi atque corporis dolor expedita, mollitia minima!
-      </p>
-      <a href="#" class="btn btn-primary">Click here</a>
+  <section id="section-1" class="masthead">
+    <div class="content-wrapper">
+      <div class="content-box">
+        <h1>Test title</h1>
+        <p>
+          Some Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Ducimus recusandae numquam quibusdam assumenda, totam qui perferendis, 
+          modi atque corporis dolor expedita, mollitia minima!
+        </p>
+        <a href="#" class="btn btn-primary">Click here</a>
+      </div>
     </div>
   </section>
-  <section id="section-2" class="content-wrapper">
+  <section id="section-2" class="content-wrapper about-us">
     <div class="row">
       <div class="col-1-2">
         <h2>Some other title</h2>
@@ -41,27 +45,30 @@
         </p>
       </div>
       <div class="col-1-2">
-        <img src="" alt="some image">
+        <img src="images/buenos-aires-2.jpg" alt="Caminito">
       </div>
     </div>
   </section>
-  <section id="section-3" class="content-wrapper">
-    <h2>Contact us</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name">
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email">
-      <label for="optin">Would you like to recieve updates?</label>
-      <input type="checkbox" name="optin" id="optin">
-      <input type="submit" value="Send">
-    </form>
+  <section id="section-3" class="content-wrapper contact-us">
+    <div class="content-box">
+      <h2>Contact us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="optin">Would you like to recieve updates?</label>
+        <input type="checkbox" name="optin" id="optin">
+        <input type="submit" value="Send" class="btn btn-primary">
+      </form>
+    </div>
   </section>
-  <footer class="footer" role="footer">
+  <footer class="footer">
     <div class="content-wrapper">
       <div class="row">
           <div class="col-1-3">
             <ul>
+              <h3>Our site</h3>
               <li><a href="#">Section 1</a></li>
               <li><a href="#">Section 2</a></li>
               <li><a href="#">Section 3</a></li>
@@ -78,12 +85,15 @@
           <div class="col-1-3">
             <h3>Follow us:</h3>
             <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"> <i class="fab fa-facebook"></i> Facebook</a></li>
             </ul>
           </div>
         </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
